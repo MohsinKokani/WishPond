@@ -1,0 +1,26 @@
+<div *ngIf="visibleWishes.length == 0; then noItems; else showItems"></div>
+
+<ng-template #noItems>No Wishes to Display</ng-template>
+
+<ng-template #showItems>
+  <ul class="wish-list">
+    <li *ngFor="let wish of visibleWishes; index as ii">
+      <div class="form-check">
+        <label
+          [attr.for]="'input-' + ii"
+          class="form-check-label"
+          [ngClass]="completed_txt_css(wish)"
+        >
+          <input
+            [attr.id]="'input-' + ii"
+            type="checkbox"
+            [checked]="wish.isCompleted"
+            (click)="toggleIsCompleted(wish)"
+          />
+          {{ wish.wishText }}
+        </label>
+        <button type="button" class="btn-close btn-close-small" (click)="removeWish(wish)"></button>
+      </div>
+    </li>
+  </ul>
+</ng-template>

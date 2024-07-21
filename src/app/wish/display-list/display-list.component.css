@@ -1,0 +1,14 @@
+.wish-list {
+  list-style: none;
+}
+
+.wish_complete {
+  text-decoration: line-through;
+}
+
+.btn-close-small {
+  width: 0.75rem;
+  height: 0.75rem;
+  padding: 0.25rem;
+  margin-left: 0.3rem;
+}

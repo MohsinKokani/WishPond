@@ -1,0 +1,8 @@
+[
+  { "wishText": "Learn HTML!", "isCompleted": true },
+  { "wishText": "Learn CSS!", "isCompleted": true },
+  { "wishText": "Learn JS!", "isCompleted": true },
+  { "wishText": "Learn TS!", "isCompleted": true },
+  { "wishText": "Learn C#!", "isCompleted": false },
+  { "wishText": "Learn Angular!", "isCompleted": false }
+]
